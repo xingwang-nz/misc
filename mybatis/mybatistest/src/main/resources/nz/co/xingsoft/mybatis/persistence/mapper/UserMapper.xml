@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="nz.co.xingsoft.mybatis.persistence.mapper.UserMapper">
+    <cache />
+        
+     <resultMap id="userMap" type="User">
+         <id property="id" column="id" />
+         <result property="username" column="user_name" />
+         <result property="first_name" column="firstName" />
+         <result property="last_name" column="lastName" />
+         <result property="email" column="email" />
+         <result property="password" column="password" />
+         <result property="created_time" column="createdTime" />
+         <result property="gender" column="gender" />
+         <result property="birthDay" column="birthday" />
+         <result property="native_tongue" column="nativeTongue" />
+         <result property="home_country" column="homeCountry" />
+         <collection property="phones" ofType="Phone" javaType="ArrayList" resultMap="phoneMap" columnPrefix="p_"/>
+     </resultMap>
+     
+      <resultMap id="phoneMap" type="Phone" >
+        <id property="id" column="id" />
+        <result property="phoneType" column="type" />
+        <result property="phoneNumber" column="number" />
+     </resultMap>
+     
+    
+     <select id="getUserByUsername" parameterType="string" resultMap="userMap">
+         SELECT
+          u.id,
+          u.user_name,
+          u.first_name,
+          u.last_name,
+          u.email,
+          u.password,
+          u.created_time,
+          u.gender,
+          u.birthday,
+          u.native_tongue,
+          u.home_country,
+          p.id as "p_id",
+          p.type as "p_type",
+          p.number as "p_number"
+        FROM user u  
+        left join phone p on p.user_id = u.id 
+        WHERE u.user_name = #{username}      
+     </select>
+</mapper>
