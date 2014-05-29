@@ -1,0 +1,38 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    metadata-complete="false" version="3.0">
+
+    <display-name>Restful Web Application</display-name>
+
+    <listener>
+        <listener-class>nz.co.xingsoft.ftpserver.application.ApplicationContextLoaderListener</listener-class>
+    </listener>
+
+    <context-param>
+        <param-name>contextClass</param-name>
+        <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>nz.co.xingsoft.ftpserver.application.SpringApplicationContext</param-value>
+    </context-param>
+
+    <!-- Apply Spring Security Filter to all Requests -->
+    
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- <servlet> -->
+    <!-- <servlet-name>H2Console</servlet-name> -->
+    <!-- <servlet-class>org.h2.server.web.WebServlet</servlet-class> -->
+    <!-- <load-on-startup>0</load-on-startup> -->
+    <!-- </servlet> -->
+    <!-- <servlet-mapping> -->
+    <!-- <servlet-name>H2Console</servlet-name> -->
+    <!-- <url-pattern>/h2/*</url-pattern> -->
+    <!-- </servlet-mapping> -->
+
+
+</web-app>
