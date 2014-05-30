@@ -80,14 +80,18 @@ public class FtpServerFtplet
   public FtpletResult onDeleteEnd(final FtpSession session, final FtpRequest request)
     throws FtpException, IOException
   {
-    return FtpletResult.SKIP;
+
+    return super.onDeleteEnd(session, request);
+
+    // return FtpletResult.SKIP;
   }
 
   @Override
   public FtpletResult onDeleteStart(final FtpSession session, final FtpRequest request)
     throws FtpException, IOException
   {
-    return FtpletResult.SKIP;
+    return super.onDeleteStart(session, request);
+    // return FtpletResult.SKIP;
   }
 
   @Override
@@ -139,14 +143,16 @@ public class FtpServerFtplet
   public FtpletResult onRenameEnd(final FtpSession session, final FtpRequest request)
     throws FtpException, IOException
   {
-    return FtpletResult.SKIP;
+    return super.onRenameEnd(session, request);
+    // return FtpletResult.SKIP;
   }
 
   @Override
   public FtpletResult onRenameStart(final FtpSession session, final FtpRequest request)
     throws FtpException, IOException
   {
-    return FtpletResult.SKIP;
+    // return FtpletResult.SKIP;
+    return super.onRenameStart(session, request);
   }
 
   @Override
