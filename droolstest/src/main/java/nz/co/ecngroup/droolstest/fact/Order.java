@@ -4,19 +4,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-	private List<OrderItem> items = new ArrayList<OrderItem>();
 
-	public List<OrderItem> getItems() {
-		return items;
-	}
+    @Override
+    public String toString() {
+        return "Order [type=" + type + ", items=" + items + "]";
+    }
 
-	public void setItems(List<OrderItem> items) {
-		this.items = items;
-	}
-	
-	public void addItem(OrderItem item) {
-		this.items.add(item);
-	}
-	
-	
+    private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(final String type) {
+        this.type = type;
+    }
+
+    private List<OrderItem> items = new ArrayList<OrderItem>();
+
+    public List<OrderItem> getItems() {
+        return items;
+    }
+
+    public void setItems(final List<OrderItem> items) {
+        this.items = items;
+    }
+
+    public void addItem(final OrderItem item) {
+        this.items.add(item);
+    }
+
 }

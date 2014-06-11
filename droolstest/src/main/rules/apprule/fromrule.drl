@@ -17,23 +17,65 @@ import java.util.List;
 
 global nz.co.ecngroup.service.DbService dbService;
 
-rule "Exists Applicnt"
+rule "Select OrderItem for NZ"
 	//dialect "java"
+	dialect "mvel"
 	salience 20
 	when
-		$order : Order($items : items);
+		//$order : Order($items : items);
+		$order : Order(type == "NZ");
+		$item  : OrderItem( value > 100 ) from $order.items
 		//$item : OrderItem(value > 100) from $order.items;
 		//$car : Car(color == Color.red) from dbService.getCars();
-		$car : Car() from dbService.getCars();
+		//$car : Car() from dbService.getCars();
 		//$cars : ArrayList() from collect( Car(color == Color.red) from dbService.getCars() );
 	then 
 		//System.out.println($item);
-		System.out.println($car);
-		List cars = dbService.getCars();
-		for(Car car : cars) {
-			System.out.println(car);
-		}
+		//System.out.println($car);
+		//List cars = dbService.getCars();
 		
+		//for(Car car : $cars) {
+			//System.out.println(car);
+		//}
+		insert($item);
+		modify($item){
+        	setSelected(true);
+    	}
+    	System.out.println($item);
+    	//retract($order);
+		//System.out.println($item);
+		//drools.getKnowledgeRuntime().getAgenda().getAgendaGroup( "a group" ).setFocus();
+		
+end
+
+
+rule "Select OrderItem for AU"
+	//dialect "java"
+	dialect "mvel"
+	salience 20
+	when
+		//$order : Order($items : items);
+		$order : Order(type == "AU");
+		$item  : OrderItem( value < 100 ) from $order.items
+		//$item : OrderItem(value > 100) from $order.items;
+		//$car : Car(color == Color.red) from dbService.getCars();
+		//$car : Car() from dbService.getCars();
+		//$cars : ArrayList() from collect( Car(color == Color.red) from dbService.getCars() );
+	then 
+		//System.out.println($item);
+		//System.out.println($car);
+		//List cars = dbService.getCars();
+		
+		//for(Car car : $cars) {
+			//System.out.println(car);
+		//}
+		insert($item);
+		modify($item){
+        	setSelected(true);
+    	}
+    	System.out.println($item);
+    	//retract($order);
+		//System.out.println($item);
 		//drools.getKnowledgeRuntime().getAgenda().getAgendaGroup( "a group" ).setFocus();
 		
 end

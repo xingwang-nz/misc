@@ -25,6 +25,13 @@
            					</bean>
            				</property>
            			</bean>
+           			<bean class="nz.co.ecngroup.droolstest.helper.Car">
+           				<property name="color">
+           					<bean class="nz.co.ecngroup.droolstest.helper.Color" factory-method="valueOf">
+           						<constructor-arg value="red"></constructor-arg>
+           					</bean>
+           				</property>
+           			</bean>
            		</list>
            	</property>
            </bean>
@@ -53,7 +60,7 @@
            		<property name="logFile" value="log/rule-log.xml"/>	
            		<property name="logToConsole" value="false"/>	
            </bean>
-           <!-- 
+          
             <bean id="fromRule" class="nz.co.ecngroup.rule.FromRule" parent="appRule">
            		<property name="sessionBuilder">
            			<bean class="nz.co.ecngroup.droolstest.SessionBuilderImpl"  parent="baseSessionBuilder">
@@ -69,7 +76,7 @@
            			</bean>
            		</property>
            </bean>
-           
+            <!-- 
            
             <bean id="helloWorldFlowRule" class="nz.co.ecngroup.rule.HelloWorldFlowRule" parent="appRule">
            		<property name="sessionBuilder">
