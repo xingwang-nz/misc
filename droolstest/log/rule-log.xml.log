@@ -1,0 +1,467 @@
+<object-stream>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>1</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>4</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Fillup milk bottle rule [1]</activationId>
+  <rule>Fillup milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>6</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+<org.drools.audit.event.ObjectLogEvent>
+  <type>2</type>
+  <factId>1</factId>
+  <objectToString>nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65</objectToString>
+</org.drools.audit.event.ObjectLogEvent>
+<org.drools.audit.event.ActivationLogEvent>
+  <type>7</type>
+  <activationId>Empty milk bottle rule [1]</activationId>
+  <rule>Empty milk bottle rule</rule>
+  <declarations>$mb=nz.co.ecngroup.droolstest.fact.MilkBottle@5caccd65(1)</declarations>
+</org.drools.audit.event.ActivationLogEvent>
+</object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream></object-stream>

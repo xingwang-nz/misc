@@ -1,0 +1,68 @@
+#created on: 19/08/2010
+package license
+
+#list any import classes here.
+import java.util.Date
+import nz.co.ecngroup.droolstest.fact.Applicant;
+import org.drools.WorkingMemory;
+import function nz.co.ecngroup.droolstest.Helper.displayMessage;
+
+
+
+#declare any global variables here
+
+declare Address
+	number : int
+	streetName : String
+	city : String
+end
+
+
+declare Person
+	name : String
+	dateOfBirth : Date
+	age : int
+	address : Address
+end
+
+
+global nz.co.ecngroup.droolstest.RuleResult ruleResult;
+global java.util.List myGlobalList;
+
+
+rule "Is of valid age"
+when
+	Applicant( girlAge:age, sex == "F" )
+    $a : Applicant( eval(age > (girlAge + 2)), sex == "M" )
+    
+then
+	ruleResult.setStatus("valid");
+	//System.out.println( displayMessage( ruleResult ) );
+	System.out.println( "applicant name: " + $a.getName() );
+	
+    $a.setValid( true );
+
+    
+    Person mark = new Person();
+	mark.setName("Mark");
+	insert( mark );
+    drools.getKnowledgeRuntime().getAgenda().getAgendaGroup( "a group" ).setFocus();
+	drools.getKnowledgeRuntime().getAgenda().getAgendaGroup( "b group" ).setFocus();
+    
+end
+
+rule "rule-a"
+	agenda-group "a group"
+when 
+	Person()
+then
+	System.out.println("fire rule a");	 
+end
+
+rule "rule-b"
+	agenda-group "b group"
+when 
+	Person()
+then
+	System.out.println("fire rule b");	 
+end

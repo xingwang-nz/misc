@@ -1,0 +1,90 @@
+#created on: Jan 5, 2011
+package test.app
+
+#list any import classes here.
+import nz.co.ecngroup.droolstest.fact.Applicant;
+import nz.co.ecngroup.droolstest.helper.Club;
+import nz.co.ecngroup.droolstest.helper.Car;
+import nz.co.ecngroup.droolstest.helper.Color;
+
+#declare any global variables here
+
+global nz.co.ecngroup.service.DbService dbService;
+
+rule "Exists Applicnt"
+	salience 20
+	when
+		//exists Applicant(club == Club.c1, eval(car.getColor() == Color.red));
+		exists Applicant(club == Club.c1, car.color == Color.red);
+	then 
+		System.out.println("Exists applicant");
+		drools.getKnowledgeRuntime().getAgenda().getAgendaGroup( "a group" ).setFocus();
+		
+end
+
+rule "Adult Rule"
+	agenda-group "a group"
+	salience 10
+	when
+		$a : Applicant(eval(dbService.isValid(age)));
+		//eval(dbService.isValid($a.getAge()) == true)
+	then 
+		#actions
+		
+		//$a.setComment("Adult Rule-1");
+		//$a.setValid(true);
+		//$a.setAge(12);
+		
+		
+		modify( $a ){
+        	setComment("Adult Rule-1"),
+        	setAge( 12 ),
+        	setValid(true)
+    	}
+    	
+		//drools.getKnowledgeRuntime().getAgenda().getAgendaGroup( "b group" ).setFocus();
+		
+		System.out.println("Adult Rule fired: " + $a.getName());
+		//retract($a);
+end
+
+/*
+rule "Adult Rule 2"
+	salience 9
+	when
+		$a : Applicant();
+		eval(dbService.isValid($a.getAge()) == true)
+	then 
+		#actions
+		$a.setComment("Adult");
+		$a.setValid(true);
+		System.out.println("Adult Rule-2 fired: " + $a.getName());
+		//retract($a);
+end
+
+rule "Non Adult Rule"
+	salience 8
+	when
+		$a : Applicant();
+		eval(dbService.isValid($a.getAge()) == false)
+	then 
+		#actions
+		$a.setComment("Not Adult");
+		$a.setValid(false);
+		System.out.println("Non Adult Rule fired: " + $a.getName());
+end
+*/
+
+rule "Non Adult Rule 2"
+	agenda-group "a group"
+	salience 7
+	//lock-on-active
+	when
+		$a : Applicant();
+		eval(dbService.isValid($a.getAge()) == false)
+	then 
+		#actions
+		$a.setComment("Non Adult Rule 2");
+		$a.setValid(false);
+		System.out.println("Non Adult Rule-2 fired: " + $a.getName());
+end

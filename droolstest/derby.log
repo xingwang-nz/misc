@@ -1,0 +1,30 @@
+----------------------------------------------------------------
+2011-06-30 12:03:51.336 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-0130-e06f-0858-0000054182a8
+on database directory /opt/drools/rules-repository/version/db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2011-06-30 12:03:52.781 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance e0b94027-0130-e06f-0858-0000054182a8
+on database directory /opt/drools/rules-repository/workspaces/default/db  
+
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+2011-06-30 12:03:54.509 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance ea5bc046-0130-e06f-0858-0000054182a8
+on database directory /opt/drools/rules-repository/workspaces/security/db  
+
+Database Class Loader started - derby.database.classpath=''
+
+2011-06-30 12:36:44.417 GMT:
+Shutting down instance e0b94027-0130-e06f-0858-0000054182a8
+----------------------------------------------------------------
+
+2011-06-30 12:36:44.596 GMT:
+Shutting down instance ea5bc046-0130-e06f-0858-0000054182a8
+----------------------------------------------------------------
+
+2011-06-30 12:36:44.858 GMT:
+Shutting down instance a816c00e-0130-e06f-0858-0000054182a8
+----------------------------------------------------------------

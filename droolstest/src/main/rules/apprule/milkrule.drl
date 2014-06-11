@@ -1,0 +1,36 @@
+#created on: Jan 5, 2011
+package test.app
+
+#list any import classes here.
+import nz.co.ecngroup.droolstest.fact.MilkBottle;
+
+
+#declare any global variables here
+
+#global nz.co.ecngroup.service.DbService dbService;
+
+rule "Fillup milk bottle rule"
+	#salience 20
+	when
+		$mb : MilkBottle(hasMilk == false, count < 10) 
+	then 
+		System.out.println("The milk bottle is empty, fill it up");
+		modify( $mb ){
+        	setHasMilk(true),
+        	increment()
+    	}
+		
+end
+
+rule "Empty milk bottle rule"
+	when
+		$mb : MilkBottle(hasMilk == true) 
+	then 
+		System.out.println("The milk bottle is full, drink the milk");
+		modify( $mb ){
+        	setHasMilk(false)
+    	}
+    	
+		
+end
+

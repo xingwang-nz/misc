@@ -1,0 +1,40 @@
+#created on: Jan 5, 2011
+package test.app
+
+dialect "mvel"
+
+#list any import classes here.
+import nz.co.ecngroup.droolstest.fact.Applicant;
+import nz.co.ecngroup.droolstest.helper.Club;
+import nz.co.ecngroup.droolstest.helper.Car;
+import nz.co.ecngroup.droolstest.helper.Color;
+import nz.co.ecngroup.droolstest.fact.Order;
+import nz.co.ecngroup.droolstest.fact.OrderItem;
+import java.util.ArrayList;
+import java.util.List;
+
+#declare any global variables here
+
+global nz.co.ecngroup.service.DbService dbService;
+
+rule "Exists Applicnt"
+	//dialect "java"
+	salience 20
+	when
+		$order : Order($items : items);
+		//$item : OrderItem(value > 100) from $order.items;
+		//$car : Car(color == Color.red) from dbService.getCars();
+		$car : Car() from dbService.getCars();
+		//$cars : ArrayList() from collect( Car(color == Color.red) from dbService.getCars() );
+	then 
+		//System.out.println($item);
+		System.out.println($car);
+		List cars = dbService.getCars();
+		for(Car car : cars) {
+			System.out.println(car);
+		}
+		
+		//drools.getKnowledgeRuntime().getAgenda().getAgendaGroup( "a group" ).setFocus();
+		
+end
+

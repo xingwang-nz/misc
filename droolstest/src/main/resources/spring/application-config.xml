@@ -1,0 +1,126 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+           
+           <bean id="dbService" class="nz.co.ecngroup.service.DbServiceImpl" >
+           	<property name="adultAge" value="21"/>
+           	<property name="cars">
+           		<list>
+           			<bean class="nz.co.ecngroup.droolstest.helper.Car">
+           				<property name="color">
+           					<bean class="nz.co.ecngroup.droolstest.helper.Color" factory-method="valueOf">
+           						<constructor-arg value="red"></constructor-arg>
+           					</bean>
+           				</property>
+           			</bean>
+           			<bean class="nz.co.ecngroup.droolstest.helper.Car">
+           				<property name="color">
+           					<bean class="nz.co.ecngroup.droolstest.helper.Color" factory-method="valueOf">
+           						<constructor-arg value="blue"></constructor-arg>
+           					</bean>
+           				</property>
+           			</bean>
+           		</list>
+           	</property>
+           </bean>
+           
+           <bean id="appRule" class="nz.co.ecngroup.rule.AppBaseRule"  abstract="true">
+           		<property name="dbService" ref="dbService"></property>
+           </bean>
+           
+           <bean id="appRule1" class="nz.co.ecngroup.rule.Rule1" parent="appRule">
+           		<property name="sessionBuilder">
+           			<bean class="nz.co.ecngroup.droolstest.SessionBuilderImpl" parent="baseSessionBuilder">
+           				<constructor-arg index="0">
+							<list>
+							</list>
+						</constructor-arg>
+						<constructor-arg index="1">
+							<list>
+								<value>apprule/apprule1.drl</value>
+							</list>
+						</constructor-arg>
+           			</bean>
+           		</property>
+           </bean>
+           
+           <bean id="baseSessionBuilder" class="nz.co.ecngroup.droolstest.AbstractSessionBuilder" abstract="true">
+           		<property name="logFile" value="log/rule-log.xml"/>	
+           		<property name="logToConsole" value="false"/>	
+           </bean>
+           <!-- 
+            <bean id="fromRule" class="nz.co.ecngroup.rule.FromRule" parent="appRule">
+           		<property name="sessionBuilder">
+           			<bean class="nz.co.ecngroup.droolstest.SessionBuilderImpl"  parent="baseSessionBuilder">
+           				<constructor-arg index="0">
+							<list>
+							</list>
+						</constructor-arg>
+						<constructor-arg index="1">
+							<list>
+								<value>apprule/fromrule.drl</value>
+							</list>
+						</constructor-arg>
+           			</bean>
+           		</property>
+           </bean>
+           
+           
+            <bean id="helloWorldFlowRule" class="nz.co.ecngroup.rule.HelloWorldFlowRule" parent="appRule">
+           		<property name="sessionBuilder">
+           			<bean class="nz.co.ecngroup.droolstest.SessionBuilderImpl"  parent="baseSessionBuilder">
+           				<constructor-arg index="0">
+							<list>
+								<value>flow/helloworld/helloworldflow.rf</value>
+							</list>
+						</constructor-arg>
+						<constructor-arg index="1">
+							<list>
+								<value>flow/helloworld/hello1.drl</value>
+								<value>flow/helloworld/hello2.drl</value>
+							</list>
+						</constructor-arg>
+           			</bean>
+           		</property>
+           </bean>
+            
+            <bean id="changeSetRule" class="nz.co.ecngroup.rule.ChangeSetRule" parent="appRule">
+           		<property name="sessionBuilder">
+           			<bean class="nz.co.ecngroup.droolstest.SessionBuilderAgent"  parent="baseSessionBuilder">
+           				<constructor-arg index="0" value="ChangeSetRuleAgent"/>
+           				<constructor-arg index="1" value="changeset/test-change-drl-set.xml"/>
+           			</bean>
+           		</property>
+           </bean>
+           
+            <bean id="changeSetFlow" class="nz.co.ecngroup.rule.ChangeSetFlow" parent="appRule">
+           		<property name="sessionBuilder">
+           			<bean class="nz.co.ecngroup.droolstest.SessionBuilderAgent"  parent="baseSessionBuilder">
+           				<constructor-arg index="0" value="ChangeSetFlowAgent"/>
+           				<constructor-arg index="1" value="changeset/test-change-rf-set.xml"/>
+           			</bean>
+           		</property>
+           </bean>
+           
+            <bean id="milkRule" class="nz.co.ecngroup.rule.MilkRule" parent="appRule">
+           		<property name="sessionBuilder">
+           			<bean class="nz.co.ecngroup.droolstest.SessionBuilderImpl" parent="baseSessionBuilder">
+           				<constructor-arg index="0">
+							<list>
+							</list>
+						</constructor-arg>
+						<constructor-arg index="1">
+							<list>
+								<value>apprule/milkrule.drl</value>
+							</list>
+						</constructor-arg>
+           			</bean>
+           		</property>
+           </bean>
+           -->
+</beans>

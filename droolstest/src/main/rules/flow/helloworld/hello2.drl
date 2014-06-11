@@ -1,0 +1,25 @@
+#created on: 26/01/2011
+package nz.co.ecngroup.helloworld;
+
+#list any import classes here.
+import nz.co.ecngroup.droolstest.fact.Applicant;
+import nz.co.ecngroup.droolstest.helper.Club;
+import nz.co.ecngroup.droolstest.helper.Car;
+import nz.co.ecngroup.droolstest.helper.Color;
+
+#declare any global variables here
+
+global nz.co.ecngroup.service.DbService dbService;
+
+
+rule "Your First Rule"
+	ruleflow-group "hello world group 2"	
+	when
+		$a : Applicant(eval(dbService.isValid(age)));
+	then 
+		$a.setComment("Hello world 2");
+		System.out.println("Hello world 2");
+		
+end
+
+

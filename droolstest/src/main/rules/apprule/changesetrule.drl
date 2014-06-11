@@ -1,0 +1,28 @@
+#created on: Jan 5, 2011
+package test.app
+
+#list any import classes here.
+import nz.co.ecngroup.droolstest.fact.Applicant;
+import nz.co.ecngroup.droolstest.helper.Club;
+import nz.co.ecngroup.droolstest.helper.Car;
+import nz.co.ecngroup.droolstest.helper.Color;
+
+#declare any global variables here
+
+global nz.co.ecngroup.service.DbService dbService;
+
+rule "Applicnt valid"
+	when
+		$a : Applicant(age > 20);
+	then 
+		System.out.println("valid applicant");
+		retract($a);
+end
+
+rule "Applicnt invalid"
+	when
+		$a : Applicant(age <= 20);
+	then 
+		System.out.println("invalid applicant");
+		retract($a);
+end

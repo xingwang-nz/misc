@@ -1,0 +1,16 @@
+<rule>
+  <name>testApplicant</name>
+  <modelVersion>1.0</modelVersion>
+  <attributes/>
+  <metadataList/>
+  <lhs>
+    <freeForm>
+      <text>$a : Applicant( age &gt; 18 )</text>
+    </freeForm>
+  </lhs>
+  <rhs>
+    <freeForm>
+      <text>$a.setValid( true );</text>
+    </freeForm>
+  </rhs>
+</rule>

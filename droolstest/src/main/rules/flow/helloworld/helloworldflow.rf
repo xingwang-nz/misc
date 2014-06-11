@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<process xmlns="http://drools.org/drools-5.0/process"
+         xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+         xs:schemaLocation="http://drools.org/drools-5.0/process drools-processes-5.0.xsd"
+         type="RuleFlow" name="flow" id="nz.net.orcon.drooltest.helloworldflow" package-name="nz.net.orcon.drooltest" >
+
+  <header>
+  </header>
+
+  <nodes>
+    <start id="1" name="Start" x="100" y="100" width="48" height="48" />
+    <ruleSet id="2" name="hello world group 1" x="183" y="149" width="366" height="48" ruleFlowGroup="hello world group 1" />
+    <ruleSet id="3" name="hello world group 2" x="207" y="289" width="334" height="48" ruleFlowGroup="hello world group 2" />
+    <end id="4" name="End" x="299" y="438" width="48" height="48" />
+  </nodes>
+
+  <connections>
+    <connection from="1" to="2" />
+    <connection from="2" to="3" />
+    <connection from="3" to="4" />
+  </connections>
+
+</process>
