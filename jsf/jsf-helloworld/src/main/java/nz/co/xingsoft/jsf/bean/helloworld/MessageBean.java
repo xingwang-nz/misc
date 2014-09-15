@@ -1,4 +1,4 @@
-package nz.co.xingsoft.jsf.bean;
+package nz.co.xingsoft.jsf.bean.helloworld;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
@@ -8,7 +8,7 @@ import javax.faces.bean.RequestScoped;
 public class MessageBean {
 
     public String getMessage() {
-        return "You entered";
+        return "You entered: ";
     }
 
 }
