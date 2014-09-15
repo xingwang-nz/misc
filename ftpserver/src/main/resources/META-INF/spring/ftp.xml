@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context" xmlns:int="http://www.springframework.org/schema/integration"
-	xmlns:int-jms="http://www.springframework.org/schema/integration/jms" xmlns:util="http://www.springframework.org/schema/util"
-	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
-	xsi:schemaLocation="
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:int="http://www.springframework.org/schema/integration"
+    xmlns:int-jms="http://www.springframework.org/schema/integration/jms" xmlns:util="http://www.springframework.org/schema/util" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
@@ -11,27 +9,27 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 
-	<bean id="ftpUserAccountManager" class="nz.co.xingsoft.ftpserver.ftp.FtpUserAccountManager">
-		<constructor-arg index="0" ref="nullPasswordEncryptor"/>
-		<property name="ftpAttributesMap" ref="ftpAttributesMap"/>
-		<property name="ftpUsersMap" ref="ftpUsersMap"/>
-	</bean>
-	<bean id="md5PasswordEncryptor" class="org.apache.ftpserver.usermanager.Md5PasswordEncryptor"/>
-  <bean id="nullPasswordEncryptor" class="nz.co.xingsoft.ftpserver.ftp.NullPasswordEncryptor"/>
+    <bean id="ftpUserAccountManager" class="nz.co.xingsoft.ftpserver.ftp.FtpUserAccountManager">
+        <constructor-arg index="0" ref="nullPasswordEncryptor" />
+        <property name="ftpAttributesMap" ref="ftpAttributesMap" />
+<!--         <property name="ftpUsersMap" ref="ftpUsersMap" /> -->
+    </bean>
+    <bean id="md5PasswordEncryptor" class="org.apache.ftpserver.usermanager.Md5PasswordEncryptor" />
+    <bean id="nullPasswordEncryptor" class="nz.co.xingsoft.ftpserver.ftp.NullPasswordEncryptor" />
 
-	<util:map id="ftpAttributesMap">
-		<entry key="homedirectory" value="${ftp.home.directory}"/>
-		<entry key="writepermission" value="${ftp.write.permission}"/>
-		<entry key="idletime" value="600"/>
-		<entry key="uploadrate" value="${ftp.max.upload.rate}"/>
-		<entry key="downloadrate" value="${ftp.max.download.rate}"/>
-		<entry key="maxloginnumber" value="${ftp.max.login.number}"/>
-		<entry key="maxloginperip" value="${ftp.max.login.per.ip}"/>
-	</util:map>
+    <util:map id="ftpAttributesMap">
+        <entry key="homedirectory" value="${ftp.home.directory}" />
+        <entry key="writepermission" value="${ftp.write.permission}" />
+        <entry key="idletime" value="600" />
+        <entry key="uploadrate" value="${ftp.max.upload.rate}" />
+        <entry key="downloadrate" value="${ftp.max.download.rate}" />
+        <entry key="maxloginnumber" value="${ftp.max.login.number}" />
+        <entry key="maxloginperip" value="${ftp.max.login.per.ip}" />
+    </util:map>
 
-	<util:map id="ftpUsersMap">
-     <entry key="testuser" value="password"/>
-	</util:map>
+    <util:map id="ftpUsersMap">
+        <entry key="testuser" value="password" />
+    </util:map>
 
 
 
