@@ -25,7 +25,7 @@ public class HelloBean
     private MessageService messageService;
 
     public String getName() {
-        return messageService.getMessage() + " " + name;
+        return messageService.getMessage().getLastName();
     }
 
     public void setName(final String name) {
