@@ -8,7 +8,7 @@
 
 //This controller retrieves data from the customersService and associates it with the $scope
 //The $scope is ultimately bound to the customers view
-app.controller('customersController', function ($scope, customersService) {
+angular.module('customersApp').controller('customersController', function ($scope, customersService) {
 
     //I like to have an init() for controllers that need to perform some initialization. Keeps things in
     //one place...not required though especially in the simple example below
