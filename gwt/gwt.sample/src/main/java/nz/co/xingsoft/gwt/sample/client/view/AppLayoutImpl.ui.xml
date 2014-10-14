@@ -1,0 +1,28 @@
+<!DOCTYPE ui:UiBinder SYSTEM "xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:DockLayoutPanel>
+		<g:south size="25" unit='EM'>
+			<g:FlowPanel ui:field="southPanel" styleName="footerPanel">
+			</g:FlowPanel>
+		</g:south>
+
+		<g:north size='75' unit='EM'>
+			<g:FlowPanel ui:field="northPanel" styleName="headerPanel">
+			</g:FlowPanel>
+		</g:north>
+<!-- 		<g:east size='2' unit='EM'> -->
+<!-- 			<g:FlowPanel> -->
+<!-- 			</g:FlowPanel> -->
+<!-- 		</g:east> -->
+		<g:center>
+			<g:SimpleLayoutPanel ui:field="centerPanel">
+			</g:SimpleLayoutPanel>
+		</g:center>
+
+	</g:DockLayoutPanel>
+</ui:UiBinder> 

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='GwtSample'>
+
+    <!-- Inherit the core Web Toolkit stuff. -->
+    <inherits name='com.google.gwt.user.User' />
+
+    <!-- Inherit the default GWT style sheet. You can change -->
+    <!-- the theme of your GWT application by uncommenting -->
+    <!-- any one of the following lines. -->
+    <inherits name='nz.co.ecngroup.shared.web.themes.ecnstandard.EcnStandard' />
+
+
+    <!-- Other module inherits -->
+
+    <!-- Our inherits -->
+    <inherits name="nz.co.ecngroup.shared.common.EcnCommon" />
+    <inherits name="nz.co.ecngroup.shared.web.widgets.EcnWidgets" />
+    <inherits name="nz.co.ecngroup.shared.web.common.WebCommon" />
+
+    <!-- 3rd party inherits -->
+    <inherits name='com.em.validation.Validation' />
+
+    <!-- Other GWT module inherits -->
+    <inherits name="com.google.gwt.activity.Activity" />
+    <inherits name="com.google.gwt.place.Place" />
+    <inherits name="com.google.gwt.editor.Editor" />
+    <inherits name="com.google.gwt.inject.Inject" />
+    <inherits name="com.google.gwt.resources.Resources" />
+
+    <!-- Guava -->
+    <inherits name="com.google.common.annotations.Annotations" />
+    <inherits name="com.google.common.base.Base" />
+    <inherits name="com.google.common.collect.Collect" />
+
+    <!-- Include GWTUpload library -->
+    <inherits name="gwtupload.GWTUpload" />
+    <!-- Load dinamically predefined styles in the library when the application starts -->
+    <stylesheet src="Upload.css" />
+    <inherits name="com.google.gwt.http.HTTP" />
+
+    <!-- NOT FOR PRODUCTION USE: adds ids to all fields and thus impacts performance -->
+    <inherits name="com.google.gwt.user.Debug" />
+
+    <!-- Specify the paths for translatable code -->
+    <source path='client' />
+    <source path='shared' />
+    <source path='services' />
+    <source path='injector' />
+
+    <public path='publicresources' />
+
+
+
+    <!-- Specify the app entry point class. -->
+    <entry-point class='nz.co.xingsoft.gwt.sample.client.GwtSample' />
+
+    <!-- LOGGING -->
+    <inherits name="com.google.gwt.logging.Logging" />
+    <set-property name="gwt.logging.enabled" value="TRUE" />
+    <set-property name="gwt.logging.logLevel" value="FINEST" />
+    <set-property name="gwt.logging.consoleHandler" value="ENABLED" />
+    <set-property name="gwt.logging.developmentModeHandler" value="ENABLED" />
+    <set-property name="gwt.logging.firebugHandler" value="ENABLED" />
+    <set-property name="gwt.logging.hasWidgetsHandler" value="DISABLED" />
+    <set-property name="gwt.logging.popupHandler" value="DISABLED" />
+    <set-property name="gwt.logging.systemHandler" value="ENABLED" />
+    <set-property name="gwt.logging.simpleRemoteHandler" value="DISABLED" />
+
+    <set-property name="user.agent" value="safari" />
+
+    <!-- <define-property name="user.agent" values="ie8" /> -->
+    <!-- <extend-property name="user.agent" values="gecko1_8" /> -->
+    <!-- <extend-property name="user.agent" values="safari" /> -->
+    <!-- <extend-property name="user.agent" values="ie9" fallback-value="ie8" /> -->
+    <!-- <extend-property name="user.agent" values="ie10" /> -->
+    <property-provider name="user.agent" generator="com.google.gwt.useragent.rebind.UserAgentPropertyGenerator"/>
+
+    <!-- Deferred binding to optimize Core based on user agent. -->
+    <inherits name="com.google.gwt.core.CoreWithUserAgent" />
+
+
+</module>

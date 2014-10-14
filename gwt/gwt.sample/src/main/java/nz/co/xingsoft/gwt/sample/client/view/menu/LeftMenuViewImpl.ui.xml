@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with field='res' type='nz.co.xingsoft.gwt.sample.client.view.resource.GlobalResources'/>
+
+<ui:style>
+		.left_panel {
+			background-color:#B3E8F9;
+			padding-left: 3px;
+				padding-bottom: 3px;
+				padding-right: 2px;
+				padding-top: 3px;
+			}
+		
+	</ui:style>
+	
+	<g:SimpleLayoutPanel ui:field="pnlLeftMain" height="100%" width="100%"></g:SimpleLayoutPanel>
+	
+</ui:UiBinder>

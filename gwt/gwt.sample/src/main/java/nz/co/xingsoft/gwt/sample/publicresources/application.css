@@ -1,0 +1,13 @@
+.footerPanel{
+  border: solid 1px gray;
+}
+
+.headerPanel{
+  border-top: solid 1px gray;
+  border-right: solid 1px gray;
+  border-bottom: solid 1px gray;
+  background: #0095cd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+  background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+}

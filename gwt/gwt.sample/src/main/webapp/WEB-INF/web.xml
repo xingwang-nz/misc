@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath:/META-INF/spring/gwtsample/application-context.xml
+		</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+
+	<servlet>
+		 <servlet-name>fileUploadServlet</servlet-name>
+		 <servlet-class>nz.co.xingsoft.gwt.sample.server.upload.FileUploadServlet</servlet-class>
+	 </servlet>
+
+	 <servlet-mapping>
+		 <servlet-name>fileUploadServlet</servlet-name>
+		 <url-pattern>/GwtSample/fileUpload</url-pattern>
+	 </servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.gwtrpcspring.RemoteServiceDispatcher</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern>/GwtSample/gwtSampleService</url-pattern>
+	</servlet-mapping>
+
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>GwtSample.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>
