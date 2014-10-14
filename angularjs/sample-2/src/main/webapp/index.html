@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="customersApp">
+<head>
+<title>AngularJS Sample</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+<link href="css/customerManagementStyles.css" rel="stylesheet" />
+
+<!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
+<script src="js/angular.min.js" type="text/javascript"></script>
+<script src="js/angular-route.min.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+
+<!-- UI Libs -->
+<script src="js/bootstrap.min.js"></script>
+
+
+<!-- App libs -->
+<script src="app/app.js"></script>
+<script src="app/controllers/controllers.js"></script>
+<script src="app/services/customersService.js"></script>
+<script src="app/directives/animatedView.js"></script>
+    
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand " href="#/">
+                    <img src="images/people.png" alt="logo"> Customer Manager
+                </a>
+                <ul class="nav nav-pills" data-ng-controller="navbarController">
+                    <li data-ng-class="{'active':getClass('/customers')}"><a href="#/customers">Customers</a></li>
+                    <li data-ng-class="{'active':getClass('/orders')}"><a href="#/orders">Orders</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note that AngularJS 1.2+ now has a built-in ng-animation direction. Left in animated-view to show a 
+         custom directive -->
+    <div animated-view></div>
+
+
+    <div id="footer">
+        <div class="navbar navbar-fixed-bottom">
+            <div class="navbar-inner">
+                <div class="container">
+                    <footer>
+                        <div class="row">
+                            <div class="span4">
+                                Created by Dan Wahlin
+                            </div>
+                            <div class="span4">
+                                Twitter: <a href="http://twitter.com/DanWahlin">@DanWahlin</a>
+                            </div>
+                            <div class="span4">
+                                Blog: <a href="http://weblogs.asp.net/dwahlin">weblogs.asp.net/dwahlin</a>
+                            </div>
+                        </div>
+                   </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
