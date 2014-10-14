@@ -14,8 +14,8 @@
 
 <!--     <aop:aspectj-autoproxy /> -->
 
-<!--     <import resource="spring-db.xml"/> -->
-<!--     <import resource="datasource.xml"/> -->
+    <import resource="spring-db.xml"/>
+    <import resource="datasource.xml"/>
 <!--     <import resource="spring-security.xml"/> -->
 
 

@@ -1,20 +1,19 @@
 package nz.co.xingsoft.jsf.service;
 
-import javax.annotation.PostConstruct;
+import javax.inject.Inject;
+
+import nz.co.xingsoft.jsf.persistence.dao.UserDao;
+import nz.co.xingsoft.jsf.persistence.entity.User;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class MessageService {
 
-    private String name = "";
+    @Inject
+    private UserDao userDao;
 
-    @PostConstruct
-    public void init() {
-        name = "service";
-    }
-
-    public String getMessage() {
-        return name;
+    public User getMessage() {
+        return userDao.getUserByUserName("xing");
     }
 }
