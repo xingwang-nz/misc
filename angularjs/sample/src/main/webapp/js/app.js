@@ -1,6 +1,8 @@
-var app = angular.module('sampleApp',[]);
+angular.module('sampleApp',['personApp']);
 
-app.controller("mainController", function($scope, $http) {
+var personApp = angular.module('personApp',[]);
+
+personApp.controller("personController", function($scope, $http) {
 	$scope.welcome = "Welcome to AngularJS!";
 	$scope.selectedPerson = null;
 	$scope.selectedGenre = null;
@@ -37,4 +39,8 @@ app.controller("mainController", function($scope, $http) {
 			});
 		}
 	}
+});
+
+personApp.controller("userController", function($scope, $http) {
+	$scope.userName = "abc";
 });
