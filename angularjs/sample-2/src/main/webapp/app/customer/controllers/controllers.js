@@ -5,10 +5,12 @@
 
   #######################################################################*/
 
+var customerModule = angular.module('customerModule', []);
+
 
 //This controller retrieves data from the customersService and associates it with the $scope
 //The $scope is ultimately bound to the customers view
-angular.module('customersApp').controller('customersController', function ($scope, customersService) {
+angular.module('customerModule').controller('customersController', function ($scope, customersService) {
 
     //I like to have an init() for controllers that need to perform some initialization. Keeps things in
     //one place...not required though especially in the simple example below
@@ -35,7 +37,7 @@ angular.module('customersApp').controller('customersController', function ($scop
 
 //This controller retrieves data from the customersService and associates it with the $scope
 //The $scope is bound to the order view
-app.controller('customerOrdersController', function ($scope, $routeParams, customersService) {
+customerModule.controller('customerOrdersController', function ($scope, $routeParams, customersService) {
     $scope.customer = {};
     $scope.ordersTotal = 0.00;
 
@@ -55,7 +57,7 @@ app.controller('customerOrdersController', function ($scope, $routeParams, custo
 
 //This controller retrieves data from the customersService and associates it with the $scope
 //The $scope is bound to the orders view
-app.controller('ordersController', function ($scope, customersService) {
+customerModule.controller('ordersController', function ($scope, customersService) {
     $scope.customers = [];
 
     //I like to have an init() for controllers that need to perform some initialization. Keeps things in
@@ -67,7 +69,7 @@ app.controller('ordersController', function ($scope, customersService) {
     }
 });
 
-app.controller('navbarController', function ($scope, $location) {
+mainApp.controller('navbarController', function ($scope, $location) {
     $scope.getClass = function (path) {
         if ($location.path().substr(0, path.length) == path) {
             return true
@@ -80,7 +82,7 @@ app.controller('navbarController', function ($scope, $location) {
 //This controller is a child controller that will inherit functionality from a parent
 //It's used to track the orderby parameter and ordersTotal for a customer. Put it here rather than duplicating 
 //setOrder and orderby across multiple controllers.
-app.controller('orderChildController', function ($scope) {
+customerModule.controller('orderChildController', function ($scope) {
     $scope.orderby = 'product';
     $scope.reverse = false;
     $scope.ordersTotal = 0.00;
